@@ -1,33 +1,27 @@
-# Ignore application.properties files in resources directories
+# Application properties
 **/src/main/resources/application.properties
 **/src/test/resources/application.properties
 
-# Ignore Docker related files
-docker-compose.yml
+# Docker
 Dockerfile
+docker-compose.yml
 
-# Compiled Java classes
-**/*.class
-
-# Package files
-*.jar
-*.war
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# Maven wrapper directory
-.mvn/
-
-# Maven and Gradle build directories
+# Common Java/Maven/IDE artifacts
 target/
-build/
+!.mvn/wrapper/maven-wrapper.jar
+**/mvnw
+**/mvnw.cmd
+!.mvn/wrapper/maven-wrapper.properties
+*.log
+*.cache
+*.diff
+*.patch
+*.class
 
 # IDE specific files
 .vscode/
 *.iml
-*.idea/
+.idea/
 *.eclipse
 *.project
 *.classpath
